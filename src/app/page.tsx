@@ -3,14 +3,14 @@
 import Upbond, { UPBOND_BUILD_ENV } from '@upbond/upbond-embed';
 import { useEffect, useState } from 'react';
 
-export default function Home() {
-  //https://github.com/upbond/embed/blob/master/README.md#login
+ //https://github.com/upbond/embed/blob/master/README.md#login
   const upbond = new Upbond({
     buttonPosition: 'bottom-left',
     buttonSize: 56,
     modalZIndex: 150,
   });
 
+export default function Home() {
   const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
